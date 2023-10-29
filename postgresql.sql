@@ -123,9 +123,10 @@ VALUES(3),
 		
 -- Unique
 
-CREATE TABLE "table three"(
+CREATE TABLE "table threell"(
 id integer,
-brand varchar(12) UNIQUE
+brand varchar(12) UNIQUE,
+primary key (id)
 );
 
 INSERT INTO "table three"
@@ -137,3 +138,68 @@ SELECT * FROM "table three";
 
 INSERT INTO "table three"
 VALUES (3, lower('ABA'));
+
+-- check
+
+CREATE TABLE "table four"(
+firstname CHAR NOT NULL,
+age integer CHECK(age>=18) -- VALUE FROM 18 ABOVE SHOULD BE ACCEPTED ELSE REJECT
+);
+
+
+SELECT * FROM "table four";
+
+INSERT INTO "table four"
+VALUES ('O', 21);
+
+
+INSERT INTO "table four"
+VALUES ('A', 1);
+
+CREATE TYPE brdname AS ENUM('Gucci', 'Nike');
+
+CREATE TABLE "table five"(
+id integer,
+brand_name  brdname
+);
+
+INSERT INTO "table five"
+VALUES (1, 'Gucci')
+
+SELECT * FROM "table five"
+
+INSERT INTO "table five"
+VALUES (1, 'Adiddas');
+
+CREATE TABLE "table six"(
+id SERIAL,
+firstname Char(12));
+
+
+INSERT INTO "table six"(firstname)
+VALUES ('OLAITAN'),
+		('JAMES'),
+		('ADA');
+		
+SELECT * FROM "table six"
+
+
+
+
+CREATE TABLE "table seven"(
+cus_id integer primary key,
+cus_name varchar(12));
+
+
+SELECT * FROM "table seven";
+
+
+INSERT INTO "table seven"
+VALUES(1, 'sancho'),
+		(2, 'james');
+		
+		
+INSERT INTO "table seven"
+VALUES(1, 'YEMI');
+
+

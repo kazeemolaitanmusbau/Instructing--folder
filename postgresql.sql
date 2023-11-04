@@ -280,7 +280,7 @@ order by
 limit/ fetch
 */		
 		
-		
+	
 		
 CREATE TABLE sales(
 
@@ -296,7 +296,7 @@ select * from sales;
 		
 		
 		
-		
+select date_format	
 		
 		
 		

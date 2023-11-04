@@ -254,8 +254,10 @@ employee_name varchar(20),
 manager_id integer	
 );
 
+select * from employee_info;
 
-copy employee_info from  'C:\Users\pc\Documents\Lasop\Mysql' DELIMITER ','
+
+copy employee_info from  'C:/Users/pc/Documents/Lasop/Mysql/self.csv' DELIMITER ','
 CSV HEADER;
 
 

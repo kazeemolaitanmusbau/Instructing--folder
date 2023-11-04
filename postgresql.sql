@@ -261,3 +261,28 @@ copy employee_info from  'C:/Users/pc/Documents/Lasop/Mysql/self.csv' DELIMITER 
 CSV HEADER;
 
 
+select e.employee_id emp_id, e.employee_name as emp_name,
+		e.manager_id mag_id, m.employee_name as mag_name
+		
+		from employee_info e
+		inner join employee_info m
+		on m.employee_id > e.manager_id;
+		
+drop table sale;	
+select * from sale;
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		

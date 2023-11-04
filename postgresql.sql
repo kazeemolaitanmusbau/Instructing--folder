@@ -273,7 +273,14 @@ select * from sale;
 		
 		
 		
-		
+/*
+distinct
+columns alias
+order by
+limit/ fetch
+
+
+*/		
 		
 		
 		

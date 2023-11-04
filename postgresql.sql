@@ -226,3 +226,7 @@ VALUES
     (3, 'Watermelon'),
     (4, 'Pear');
 
+
+select * from  basket_a;
+
+select * from  basket_b;

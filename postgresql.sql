@@ -240,4 +240,22 @@ where b.fruit_b is null;
 
 
 
+select a.a, a.fruit_a, b.b, b.fruit_b
+from basket_a a
+full join basket_b b
+on a.fruit_a = b.fruit_b;
+
+drop table if exists employee_info;
+
+create table employee_info(
+
+employee_id integer,
+employee_name varchar(20),	
+manager_id integer	
+);
+
+
+copy employee_info from  'C:\Users\pc\Documents\Lasop\Mysql' DELIMITER ','
+CSV HEADER;
+
 

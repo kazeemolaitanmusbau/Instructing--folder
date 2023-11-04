@@ -232,7 +232,7 @@ select * from  basket_a;
 select * from  basket_b;
 
 
-select a.a, a.fruit_b, b.b, b.fruit_b
+select a.a, a.fruit_a, b.b, b.fruit_b
 from basket_a a
-left join basket_b a
+left join basket_b b
 on a.fruit_a = b.fruit_b

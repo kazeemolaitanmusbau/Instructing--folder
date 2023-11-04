@@ -278,12 +278,19 @@ distinct
 columns alias
 order by
 limit/ fetch
-
-
 */		
 		
 		
 		
+CREATE TABLE sales(
+
+"Date" DATE,
+Item VARCHAR(20),
+Quantity integer,
+Price integer
+); 
+		
+select * from sales;	
 		
 		
 		

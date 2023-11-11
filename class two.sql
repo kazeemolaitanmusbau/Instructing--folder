@@ -160,5 +160,10 @@ age integer CHECK(age>=18)
 );
 
 
+INSERT INTO t4
+values(1, 18);
+
+
+
 
 		

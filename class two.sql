@@ -164,6 +164,40 @@ INSERT INTO t4
 values(1, 18);
 
 
+CREATE TYPE brandname AS ENUM('Adidas', 'Gucci', 'Nike');
 
 
-		
+CREATE TABLE t5(
+id integer,
+"type of brand"  brandname
+);
+
+
+INSERT INTO t5
+VALUES( 1, 'Nike');
+
+
+----
+CREATE TABLE t6(
+id integer PRIMARY KEY,
+age integer 
+);
+
+INSERT INTO t6
+VALUES(1, 22),
+	  (2, 34);
+	  
+	  
+CREATE TABLE t7(
+id integer PRIMARY KEY,
+age integer,
+grade integer PRIMARY KEY   --- INVALID WAY OF CREATING MULTIPLE PRIMARY KEY
+);
+
+
+CREATE TABLE t7(
+id integer,
+age integer,
+grade integer ,
+PRIMARY KEY (id, grade)   --- VALID WAY OF CREATINGMULTIPLE PRIMARY KEY 
+);

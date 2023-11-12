@@ -208,17 +208,31 @@ CREATE TABLE t8(
 id serial ,
 firstname varchar(12),
 PRIMARY KEY(id)
-
 );
 
 
+CREATE TABLE t9(
+stdt_id integer,
+grade integer,
+FOREIGN KEY (stdt_id) REFERENCES t8(id)
+)
+
+
+INSERT INTO t8(firstname)
+VALUES('olaitan'), ('yemi'),
+		('kola'),
+		('Ada'),
+		('Ade'),
+		('kemi'),
+		('alao'),
+		('james')
+
+SELECT * FROM  t8;
 
 
 
-
-
-
-
+INSERT INTO t9(stdt_id, grade)
+VALUES(9, 90)
 
 
 

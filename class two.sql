@@ -232,7 +232,15 @@ SELECT * FROM  t8;
 
 
 INSERT INTO t9(stdt_id, grade)
-VALUES(9, 90)
+VALUES(8, 90), (1, 70), (2, 70), (6, 82)
+
+
+SELECT * FROM  t9;
+
+delete from t8
+where id = 1;
 
 
 
+delete from t9
+where stdt_id = 1;

@@ -227,7 +227,9 @@ VALUES('olaitan'), ('yemi'),
 		('alao'),
 		('james')
 
-SELECT * FROM  t8;
+SELECT * FROM  t8
+offset 2 row
+limit 7 only;
 
 
 
@@ -244,3 +246,22 @@ where id = 1;
 
 delete from t9
 where stdt_id = 1;
+
+
+
+
+/*
+selete distinct
+column alias
+limit 
+order by
+*/
+
+
+CREATE TABLE sale_info(
+"Order Date" DATE,
+Item VARCHAR(20),
+Quantity integer,
+Price integer
+)
+

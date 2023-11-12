@@ -201,3 +201,16 @@ age integer,
 grade integer ,
 PRIMARY KEY (id, grade)   --- VALID WAY OF CREATINGMULTIPLE PRIMARY KEY 
 );
+
+
+
+
+
+
+
+
+
+
+
+
+

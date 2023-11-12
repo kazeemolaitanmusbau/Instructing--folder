@@ -203,6 +203,14 @@ PRIMARY KEY (id, grade)   --- VALID WAY OF CREATINGMULTIPLE PRIMARY KEY
 );
 
 
+----
+CREATE TABLE t8(
+id serial ,
+firstname varchar(12),
+PRIMARY KEY(id)
+
+);
+
 
 
 

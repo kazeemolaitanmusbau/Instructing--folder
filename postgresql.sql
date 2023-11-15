@@ -308,6 +308,12 @@ select date_format
 		
 create table dup_salesa as select item from sales where quantity=2;		
 
-select * from dup_salesa;
-
+LOCK TABLE info_table READ;
 create table v like sales
+
+SELECT CONNECTION_ID(); 
+
+LOCK TABLE info_table READ;
+
+insert into dup_salesa
+values('ola')

@@ -321,3 +321,15 @@ on conflict (item)
 do nothing;
 
 select * from dup_salesa;
+
+
+create table i(
+id integer unique,
+N varchar(12))
+
+
+
+insert into i
+values (1, 'K'),
+		(2, 'i'),
+		(1, 'M')

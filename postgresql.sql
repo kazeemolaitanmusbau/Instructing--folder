@@ -306,4 +306,6 @@ where quantity >2;
 select date_format	
 		
 		
-		
+create table dup_sales as select * from sales where quantity=2;		
+
+select * from dup_sales;

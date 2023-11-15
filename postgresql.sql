@@ -292,10 +292,17 @@ Price integer
 		
 select * from sales;	
 		
+select * from too;	
+	
+create temporary table too as
+select * from sales
+where quantity >2;
 		
-		
-		
-		
+	
+create view too as
+select * from sales
+where quantity >2;
+			
 select date_format	
 		
 		

@@ -317,3 +317,7 @@ LOCK TABLE info_table READ;
 
 insert into dup_salesa
 values('ola')
+on conflict (item)
+do nothing;
+
+select * from dup_salesa;

@@ -306,6 +306,8 @@ where quantity >2;
 select date_format	
 		
 		
-create table dup_sales as select * from sales where quantity=2;		
+create table dup_salesa as select item from sales where quantity=2;		
 
-select * from dup_sales;
+select * from dup_salesa;
+
+create table v like sales

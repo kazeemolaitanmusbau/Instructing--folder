@@ -288,4 +288,5 @@ values('Prediator', 2, 600),
 
 
 select * from sale_info
-limit 5;
+offset 8 rows
+fetch next 10 rows only;

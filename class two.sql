@@ -284,3 +284,8 @@ values('Prediator', 2, 600),
 		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),
 		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812);
 
+
+
+
+select * from sale_info
+limit 5;

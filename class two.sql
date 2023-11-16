@@ -274,7 +274,13 @@ insert into sale_info(Item,Quantity,Price)
 values('Rice', 23, 812);
 
 insert into sale_info(Item,Quantity,Price)
-values('Rice', 23, 812)
-ON conflict (order_id, Quantity)
-DO NOTHING;
+values('Prediator', 2, 600),
+		('Beans', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Beans', 2, 42),
+		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),
+		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),
+		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),
+		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),
+		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),
+		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),
+		('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812),('Rice', 23, 812);
 

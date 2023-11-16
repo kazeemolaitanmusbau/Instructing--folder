@@ -333,3 +333,10 @@ insert into i
 values (1, 'K'),
 		(2, 'i'),
 		(1, 'M')
+on conflict (id)
+do nothing
+
+select * from i
+
+
+SELECT IF(200>350,'YES','NO');  

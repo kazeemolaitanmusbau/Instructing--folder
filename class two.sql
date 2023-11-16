@@ -290,3 +290,14 @@ values('Prediator', 2, 600),
 select * from sale_info
 offset 8 rows
 fetch next 10 rows only;
+
+
+
+
+
+
+create table ola(
+namess varchar(29)
+);
+
+create table ola2(name_id int);

@@ -128,3 +128,19 @@ VALUES ("olaitan"),
 		("sancho");
         
    SELECT * FROM t2;     
+   
+   
+   CREATE TABLE t3(
+   firstname varchar(10),
+   age int check(age>=18) );
+   
+   
+   insert into t3()
+   values ('olaitan', 24),
+		('jame', 39);
+        
+        
+        insert into t3()
+   values ('olaitan', 12);
+   
+   

@@ -257,11 +257,24 @@ limit
 order by
 */
 
+drop table sale_info;
 
 CREATE TABLE sale_info(
-"Order Date" DATE,
+order_id  serial,
+"Order Date" DATE default now(),
 Item VARCHAR(20),
 Quantity integer,
 Price integer
 )
+
+
+select * from sale_info;
+
+insert into sale_info(Item,Quantity,Price)
+values('Rice', 23, 812);
+
+insert into sale_info(Item,Quantity,Price)
+values('Rice', 23, 812)
+ON conflict (order_id, Quantity)
+DO NOTHING;
 

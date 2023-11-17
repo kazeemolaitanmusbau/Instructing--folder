@@ -146,3 +146,6 @@ VALUES ("olaitan"),
    
    select * from book;
    
+   
+    select count(city) from book
+    group by 1;

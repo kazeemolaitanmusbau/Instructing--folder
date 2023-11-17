@@ -144,5 +144,5 @@ VALUES ("olaitan"),
    values ('olaitan', 12);
    
    
-   
+   select * from book;
    

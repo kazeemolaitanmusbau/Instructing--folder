@@ -152,3 +152,5 @@ VALUES ("olaitan"),
     order by 2 desc;
     
  select * from pets;
+ 
+ drop table course_details;

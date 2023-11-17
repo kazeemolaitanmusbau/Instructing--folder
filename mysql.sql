@@ -151,4 +151,4 @@ VALUES ("olaitan"),
     group by 1
     order by 2 desc;
     
-    
+ select * from pets;

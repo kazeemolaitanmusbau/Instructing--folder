@@ -147,5 +147,6 @@ VALUES ("olaitan"),
    select * from book;
    
    
-    select count(city) from book
-    group by 1;
+    select`ship Mode`, count(city) from book
+    group by 1
+    order by 2 desc;

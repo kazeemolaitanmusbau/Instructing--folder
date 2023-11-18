@@ -459,3 +459,11 @@ WHERE item LIKE 'Sw%';
 -- return all item that name ends with t
 SELECT * FROM sales_info
 WHERE item LIKE '%t';
+
+
+-- return all item that i can be find anywhere in the name 
+SELECT * FROM sales_info
+WHERE item LIKE '%i%';
+
+SELECT * FROM sales_info
+WHERE item LIKE 'Dr___';

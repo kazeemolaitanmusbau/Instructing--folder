@@ -171,5 +171,6 @@ VALUES ("olaitan"),
  To add NOT NULL constrainst to the columns
  ALTER TABLE t2 ADD CONSTRAINT uniquename UNIQUE(col1, col2)
  
- 
+ To add CHECK constrainst to the columns
+ ALTER TABLE t2 ADD CONSTRAINT checkname CHECK(condition)
  */

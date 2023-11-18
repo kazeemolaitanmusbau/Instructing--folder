@@ -184,5 +184,11 @@ VALUES ("olaitan"),
  */
  
  
- 
+ CREATE TABLE company(
+id serial,
+name VARCHAR(20),
+age integer,
+address TEXT, 
+salary INTEGER
+ )
  

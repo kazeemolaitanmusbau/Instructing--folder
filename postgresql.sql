@@ -392,3 +392,61 @@ ORDER BY "Order Date" DESC,  Price ASC;
 SELECT "Order Date", Item, Price
 FROM sales_info
 ORDER BY Item DESC,  Price ASC;
+
+-- Dress Jeans Skirt Swimwear "T Shirt"
+SELECT * FROM sales_info
+ORDER BY item desc;
+
+-- Swimwear, Jeans "T Shirt",  Dress Skirt
+
+SELECT * FROM sales_info
+ORDER BY  CASE
+				WHEN Item = 'Swimwear' THEN 1
+				WHEN Item = 'Jeans' THEN 2
+				WHEN Item = 'T Shirt' THEN 3
+				WHEN Item = 'Dress' THEN 4
+				-- WHEN Item = 'Skirt' THEN 5
+		 ELSE 5
+		END ;
+	
+	
+-- WHERE CLAUSE
+
+/*
+OPERATOR TO COMBINE WEHERE CLAUSE WITH
+
+EQUAL::::: =
+NOT EQUAL::::  <>
+GREATER THAN::: >
+GRAEATER THAN OR EQUAL:::  >=
+LESS THAN:::: <
+LESS THAN OR EQUAL TO::::: <=
+LIKE
+IN 
+NOT LIKE
+NOT IN
+IS NULL
+AND 
+OR 
+BETWEEN
+NOT BETWEEN
+
+*/
+
+-- select all from salesinfo when item is Skirt only
+
+SELECT * FROM sales_info
+WHERE Item = 'Skirt';
+
+-- select all from salesinfo when item is Skirt, T shirt  only
+SELECT * FROM sales_info
+WHERE Item = 'Skirt'
+or Item = 'T Shirt';
+
+-- select all from salesinfo when item is Skirt and the price for
+-- each is greater than 99, T shirt and the price for
+-- each is less than 99
+
+ SELECT * FROM sales_info
+WHERE Item = 'Skirt' AND price> 99
+or Item = 'T Shirt'   AND price< 99 ; 

@@ -173,4 +173,10 @@ VALUES ("olaitan"),
  
  To add CHECK constrainst to the columns
  ALTER TABLE t2 ADD CONSTRAINT checkname CHECK(condition)
+ 
+ To add primary key constrainst to the columns
+ ALTER TABLE t2 ADD CONSTRAINT keyname PRIMARY KEY(col1, col2)
+ 
+ To Drop primary key
+ ALTER TABLE t2 DROP CONSTRAINT keyname
  */

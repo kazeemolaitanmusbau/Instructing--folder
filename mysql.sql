@@ -163,4 +163,8 @@ VALUES ("olaitan"),
  
  To drop columns:::
  ALTER TABLE t2 DROP col1, col2
+ 
+ 
+ To add datatype to columns in the table:::
+ ALTER TABLE t2 ALTER col1 TYPE datatype
  */

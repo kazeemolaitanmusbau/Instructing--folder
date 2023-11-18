@@ -208,4 +208,6 @@ INSERT INTO company(name,  age, address,  salary)
 CREATE TYPE gender_info AS ENUM('Male', 'Female');
 
 ALTER TABLE company
-ADD COLUMNS gender 
+ADD gender gender_info,
+ADD contact VARCHAR(20);
+

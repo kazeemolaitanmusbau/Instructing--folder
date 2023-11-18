@@ -190,5 +190,15 @@ name VARCHAR(20),
 age integer,
 address TEXT, 
 salary INTEGER
- )
+ );
  
+ 
+INSERT INTO comapany(namem agem addressm salary)
+ VALUES ('Paul', 32, 'California', 20000),
+ 		('Allen', 25, 'California', 20000),
+		('Teddy', 23, 'California', 20000),
+		('Mark', 32, 'California', 20000),
+		('David', 32, 'California', 20000),
+		('Kim', 32, 'California', 20000),
+		('James', 32, 'California', 20000),
+		('Smith', 32, 'California', 20000),

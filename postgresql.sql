@@ -448,5 +448,14 @@ or Item = 'T Shirt';
 -- each is less than 99
 
  SELECT * FROM sales_info
-WHERE Item = 'Skirt' AND price> 99
-or Item = 'T Shirt'   AND price< 99 ; 
+WHERE Item = 'Skirt' AND price>= 99
+or Item = 'T Shirt'   AND price<= 99 ; 
+
+-- all item that name start with s
+SELECT * FROM sales_info
+WHERE item LIKE 'Sw%';
+
+
+-- return all item that name ends with t
+SELECT * FROM sales_info
+WHERE item LIKE '%t';

@@ -154,3 +154,9 @@ VALUES ("olaitan"),
  select * from pets;
  
  drop table course_details;
+ 
+ 
+ 
+ /*
+ To add Coumms
+ */

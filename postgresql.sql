@@ -373,4 +373,22 @@ SELECT * FROM sales_info
 OFFSET 1 ROWS
 FETCH 	NEXT 10 ROWS ONLY;
 
--- 
+-- ORDER BY::: IS USED FOR SORTING IN SQL
+SELECT * FROM sales_info
+ORDER BY quantity ASC;
+
+-- SORTING WITH ONE COLUMNS
+SELECT * FROM sales_info
+ORDER BY Item DESC;
+
+
+-- SORTING WITH TWO COLUMNS
+SELECT "Order Date", Item, Price
+FROM sales_info
+ORDER BY "Order Date" DESC,  Price ASC;
+
+
+-- SORTING WITH TWO COLUMNS
+SELECT "Order Date", Item, Price
+FROM sales_info
+ORDER BY Item DESC,  Price ASC;

@@ -193,7 +193,7 @@ salary INTEGER
  );
  
  
-INSERT INTO comapany(namem agem addressm salary)
+INSERT INTO company(name,  age, address,  salary)
  VALUES ('Paul', 32, 'California', 20000),
  		('Allen', 25, 'Texas', 15000),
 		('Teddy', 23, 'Norway', 20000),
@@ -201,4 +201,4 @@ INSERT INTO comapany(namem agem addressm salary)
 		('David', 27, 'Texas', 85000),
 		('Kim', 22, 'South-Hall',450000),
 		('James', 24, 'Houston', 10000),
-		('Smith', 28, 'New York', 92000),
+		('Smith', 28, 'New York', 92000);

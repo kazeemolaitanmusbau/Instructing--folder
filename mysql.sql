@@ -202,3 +202,10 @@ INSERT INTO company(name,  age, address,  salary)
 		('Kim', 22, 'South-Hall',450000),
 		('James', 24, 'Houston', 10000),
 		('Smith', 28, 'New York', 92000);
+		
+		
+-- Add gender and contact columns
+CREATE TYPE gender_info AS ENUM('Male', 'Female');
+
+ALTER TABLE company
+ADD COLUMNS gender 

@@ -179,4 +179,10 @@ VALUES ("olaitan"),
  
  To Drop primary key
  ALTER TABLE t2 DROP CONSTRAINT keyname
+ 
+
  */
+ 
+ 
+ 
+ 

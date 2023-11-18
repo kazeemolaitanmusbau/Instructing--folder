@@ -211,3 +211,13 @@ ALTER TABLE company
 ADD gender gender_info,
 ADD contact VARCHAR(20);
 
+-- make query from company table
+SELECT * FROM company;
+
+
+-- update the gender
+UPDATE company
+SET gender =  CASE 
+					WHEN id=1 THEN 'Female':: gender_info
+				ELSE 'Male':: gender_info
+				END;

@@ -195,10 +195,10 @@ salary INTEGER
  
 INSERT INTO comapany(namem agem addressm salary)
  VALUES ('Paul', 32, 'California', 20000),
- 		('Allen', 25, 'California', 20000),
-		('Teddy', 23, 'California', 20000),
-		('Mark', 32, 'California', 20000),
-		('David', 32, 'California', 20000),
-		('Kim', 32, 'California', 20000),
-		('James', 32, 'California', 20000),
-		('Smith', 32, 'California', 20000),
+ 		('Allen', 25, 'Texas', 15000),
+		('Teddy', 23, 'Norway', 20000),
+		('Mark', 25, 'Rich-Mond', 65000),
+		('David', 27, 'Texas', 85000),
+		('Kim', 22, 'South-Hall',450000),
+		('James', 24, 'Houston', 10000),
+		('Smith', 28, 'New York', 92000),

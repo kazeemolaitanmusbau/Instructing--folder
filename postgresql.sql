@@ -336,13 +336,20 @@ select * from i
 SELECT IF(200>350,'YES','NO'); 
 
 /*
-distinct
+select distinct
 columns alias
-order by
 limit/ fetch
+order by
 */		
 
+CREATE TABLE sales_info(
+"Order Date" Text,
+Item VARCHAR(20),
+Quantity integer,
+price integer	
+);
 
+SELECT * FROM sales_info;
 
 
 

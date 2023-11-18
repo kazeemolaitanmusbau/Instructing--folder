@@ -352,8 +352,25 @@ price integer
 SELECT * FROM sales_info;
 
 
+-- distinct:::: to remove duplicate entries from the query 
+SELECT DISTINCT * FROM sales_info;
 
 
+-- alias:: remaning the columns name in the query
+SELECT DISTINCT "Order Date"  Purchased_date, Item as Product, Price  as price_each
+FROM sales_info;
+
+-- using limit to return first five rows on the sale_info table
+SELECT * FROM sales_info
+LIMIT 5;
+
+-- using fetch to return first five rows on the sale_info table
+SELECT * FROM sales_info
+FETCH 	NEXT 5 ROWS ONLY;
 
 
+SELECT * FROM sales_info
+OFFSET 1 ROWS
+FETCH 	NEXT 10 ROWS ONLY;
 
+-- 

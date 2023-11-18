@@ -167,4 +167,9 @@ VALUES ("olaitan"),
  
  To add datatype to columns in the table:::
  ALTER TABLE t2 ALTER col1 TYPE datatype
+ 
+ To add NOT NULL constrainst to the columns
+ ALTER TABLE t2 ADD CONSTRAINT uniquename UNIQUE(col1, col2)
+ 
+ 
  */

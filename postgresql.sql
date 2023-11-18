@@ -273,12 +273,6 @@ select * from sale;
 		
 		
 		
-/*
-distinct
-columns alias
-order by
-limit/ fetch
-*/		
 		
 	
 		
@@ -339,4 +333,20 @@ do nothing
 select * from i
 
 
-SELECT IF(200>350,'YES','NO');  
+SELECT IF(200>350,'YES','NO'); 
+
+/*
+distinct
+columns alias
+order by
+limit/ fetch
+*/		
+
+
+
+
+
+
+
+
+

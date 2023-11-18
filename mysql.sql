@@ -160,4 +160,7 @@ VALUES ("olaitan"),
  /*
  To add Coumms:::
  ALTER TABLE t2 ADD col1 datatype, col2 datatype
+ 
+ To drop columns:::
+ ALTER TABLE t2 DROP col1, col2
  */

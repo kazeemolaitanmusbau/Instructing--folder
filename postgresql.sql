@@ -479,3 +479,40 @@ alter clause
 */
 
 SELECT * FROM sales_info;
+
+
+CREATE TABLE people_info(
+id SERIAL,
+states varchar(20),
+gender char(12),
+age integer,
+salary decimal(10, 2)
+);
+
+SELECT * FROM people_info;
+
+INSERT INTO people_info(states, gender, age, salary)
+VALUES('lagos', 'male', 32, 2376.34),
+		('kaduna', 'male', 42, 27376.34),
+		('kaduna', 'female', 27, 6353.83),
+		('lagos', 'female', 38, 3637.11),
+		('kaduna', 'male', 37, 2376.34),
+		('lagos', 'male', 32, 2376.34),
+		('kaduna', 'male', 18, 72837.34),
+		('lagos', 'female', 33, 6251.34),
+		('lagos', 'male', 32, 2376.34),
+		('lagos', 'female', 26, 4857.34),
+		('kaduna', 'female', 29, 3747.34);
+		
+SELECT * FROM people_info;
+
+-- retrun the average age of people in lagos and kaduna state
+SELECT states , count(gender), avg(age)
+from people_info   --- group by one column and apply agg on two columns
+GROUP BY states;
+
+
+-- groupping with more than one column
+
+SELECT states, gender, count(gender), avg(age)
+from people_info

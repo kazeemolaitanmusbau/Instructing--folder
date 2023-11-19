@@ -514,5 +514,20 @@ GROUP BY states;
 
 -- groupping with more than one column
 
-SELECT states, gender, count(gender), avg(age)
+SELECT gender, states, count(gender) AS gender_count, round( avg(age), 2) AS average_age
 from people_info
+GROUP BY 1, 2
+having gender='male';
+
+
+
+
+CREATE TABLE student_info(
+id serial,
+firstname varchar(20))
+
+INSERT INTO student_info(firstname)
+VALUES('ola'), ('kola'), ('yemi'), ('ade'), ('ojo'), ('smith'), ('james'), 
+('sancho'), ('onana'),('alao');
+
+SELECT * FROM student_info;

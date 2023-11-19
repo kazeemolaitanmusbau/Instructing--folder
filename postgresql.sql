@@ -531,3 +531,15 @@ VALUES('ola'), ('kola'), ('yemi'), ('ade'), ('ojo'), ('smith'), ('james'),
 ('sancho'), ('onana'),('alao');
 
 SELECT * FROM student_info;
+
+
+CREATE TABLE grade_info(
+stdnt_id int,
+grade varchar(20)
+);
+
+INSERT INTO grade_info
+VALUES(2, 'Pass'),(4, 'Fail'),(7, 'Pass'),(1, 'Pass'),(9, 'Pass'),(5, 'Fail');
+
+SELECT * FROM student_info;
+SELECT * FROM grade_info;

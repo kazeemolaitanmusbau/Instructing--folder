@@ -543,3 +543,24 @@ VALUES(2, 'Pass'),(4, 'Fail'),(7, 'Pass'),(1, 'Pass'),(9, 'Pass'),(5, 'Fail');
 
 SELECT * FROM student_info;
 SELECT * FROM grade_info;
+
+-- inner join
+SELECT id, firstname, grade, stdnt_id
+FROM student_info
+INNER JOIN grade_info
+ON  id = stdnt_id
+
+
+-- right join
+SELECT id, firstname, grade, stdnt_id
+FROM student_info
+RIGHT JOIN grade_info
+ON  id = stdnt_id
+
+
+
+-- LEFT join
+SELECT id, firstname, grade, stdnt_id
+FROM student_info
+LEFT JOIN grade_info
+ON  id = stdnt_id

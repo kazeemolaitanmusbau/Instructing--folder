@@ -471,5 +471,11 @@ WHERE item LIKE 'Dr___';
 
 
 /*
+group by
+having
+join ---- inner join, left join, right join, self join
+alter clause
 
 */
+
+SELECT * FROM sales_info;

@@ -308,15 +308,45 @@ SELECT * FROM customer_info;
 INSERT INTO customer_info(firstname,employeee_id)
 VALUES ("OLAITAN", 33),
 		("Yemi", 33),
-        ("James", 33),
+        ("James", 22),
         ("kemi", 33),
         ("Ada", 33),
-        ("Smith", 33),
+        ("Smith", 22),
         ("Richael", 33),
-        ("Bunmi", 33);
+        ("Bunmi", 22);
 
 
 INSERT INTO order_info()
-VALUES (1, 6, 739.88);
+VALUES (1, 6, 739.88),
+		(1, 7, 77),
+        (3, 92, 9272.4),
+        (7, 23, 7382.3),
+        (4, 483, 7939.7),
+        (7, 33, 38373),
+        (6, 99, 2827);
 
 
+-- delete, truncate
+
+TRUNCATE  order_info;
+DELETE FROM order_info;
+
+DELETE FROM customer_info
+WHERE cust_id = 2;
+
+SELECT * FROM customer_info;
+
+SELECT * FROM order_info;
+
+DELETE FROM order_info
+WHERE customer_id_number = 6;
+
+DELETE FROM order_info
+WHERE customer_id_number IN ( SELECT  customer_id_number from order_info GROUP BY
+								customer_id_number having COUNT(*)>1);
+                                
+                                
+DELETE t1 from order_info t1
+join order_info t2
+on t1.customer_id_number = t2.customer_id_number
+where t1.customer_id_number = t2.customer_id_number;

@@ -297,10 +297,26 @@ customer_id_number int,
 quantity int DEFAULT 3,
 price FLOAT,  
 CONSTRAINT kazeem  FOREIGN KEY(customer_id_number) references customer_info(cust_id)
-)
+);
+
+SELECT * FROM order_info;
 
 
 
+SELECT * FROM customer_info;
 
+INSERT INTO customer_info(firstname,employeee_id)
+VALUES ("OLAITAN", 33),
+		("Yemi", 33),
+        ("James", 33),
+        ("kemi", 33),
+        ("Ada", 33),
+        ("Smith", 33),
+        ("Richael", 33),
+        ("Bunmi", 33);
+
+
+INSERT INTO order_info()
+VALUES (1, 6, 739.88);
 
 

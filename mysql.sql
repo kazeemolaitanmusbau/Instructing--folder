@@ -225,3 +225,12 @@ PRIMARY KEY
 AUTO INCREMENT
 FOREIGN KEY
 */
+
+
+-- UNIQUE:::: It ensure that column does not accept duplicate entries
+
+CREATE TABLE t1(
+id INT UNIQUE,
+state VARCHAR(20) )
+
+

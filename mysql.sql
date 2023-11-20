@@ -231,6 +231,53 @@ FOREIGN KEY
 
 CREATE TABLE t1(
 id INT UNIQUE,
-state VARCHAR(20) )
+state VARCHAR(20) );
+
+SELECT * FROM t1;
+
+INSERT INTO t1(id, state)
+VALUES(1, 'Lagos'),
+		(2, "Kaduna"),
+        (3, "Lagos");
+
+INSERT INTO t1(id, state)
+VALUES(1, 'Kano');
+
+-- enum
+CREATE TABLE t3(
+id int,
+brandName ENUM("Adidas", "Gucci", "Nike"));
 
 
+INSERT INTO t3
+VALUES(1, "Adidas"), (2, "Nike");
+
+SELECT * FROM t3;
+
+
+
+INSERT INTO t3
+VALUES (2, 'Aba made');
+
+
+
+CREATE TABLE t4(
+id INT PRIMARY KEY,
+state VARCHAR(20) ) ;
+
+INSERT INTO t4()
+VALUES(1, "Lagos"), (2, "Kaduna"), (3, "Kano");
+
+SELECT * FROM t4;
+
+INSERT INTO t4(state)
+VALUES("Lagos");
+
+
+
+ CREATE TABLE t4(
+id INT PRIMARY KEY,
+state VARCHAR(20) ) ;
+
+INSERT INTO t4()
+VALUES(1, "Lagos"), (2, "Kaduna"), (3, "Kano");

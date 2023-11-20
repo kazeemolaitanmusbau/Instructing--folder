@@ -204,20 +204,24 @@ INSERT INTO company(name,  age, address,  salary)
 		('Smith', 28, 'New York', 92000);
 		
 		
--- Add gender and contact columns
-CREATE TYPE gender_info AS ENUM('Male', 'Female');
-
-ALTER TABLE company
-ADD gender gender_info,
-ADD contact VARCHAR(20);
-
--- make query from company table
-SELECT * FROM company;
 
 
--- update the gender
-UPDATE company
-SET gender =  CASE 
-					WHEN id=1 THEN 'Female':: gender_info
-				ELSE 'Male':: gender_info
-				END;
+
+
+
+
+
+
+
+
+
+/*
+NOT NULL
+CHECK
+DEFAULT 
+UNIQUE
+ENUM
+PRIMARY KEY
+AUTO INCREMENT
+FOREIGN KEY
+*/

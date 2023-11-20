@@ -274,10 +274,33 @@ INSERT INTO t4(state)
 VALUES("Lagos");
 
 
+DROP TABLE t5;
 
- CREATE TABLE t4(
-id INT PRIMARY KEY,
-state VARCHAR(20) ) ;
+ CREATE TABLE t5(
+id INT PRIMARY KEY AUTO_INCREMENT ,
+state VARCHAR(20) ) AUTO_INCREMENT= 10;
 
-INSERT INTO t4()
-VALUES(1, "Lagos"), (2, "Kaduna"), (3, "Kano");
+INSERT INTO t5(state)
+VALUES("Lagos"), ("Kaduna"), ( "Kano");
+
+SELECT * FROM t5;
+
+CREATE TABLE customer_info(
+cust_id INT  AUTO_INCREMENT,
+firstname VARCHAR(20),
+employeee_id int , 
+constraint olaitan PRIMARY KEY(cust_id, employeee_id) );
+
+
+CREATE TABLE order_info(
+customer_id_number int,
+quantity int DEFAULT 3,
+price FLOAT,  
+CONSTRAINT kazeem  FOREIGN KEY(customer_id_number) references customer_info(cust_id)
+)
+
+
+
+
+
+

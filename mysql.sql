@@ -352,4 +352,5 @@ on t1.customer_id_number = t2.customer_id_number
 where t1.customer_id_number = t2.customer_id_number;
 
 select kind, gender, avg(age) age_VG , count(kind) count
-from pets;
+from pets
+where age>3;

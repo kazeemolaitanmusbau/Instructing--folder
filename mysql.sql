@@ -355,4 +355,5 @@ select kind, gender, avg(age) age_VG , count(kind) count
 from pets
 where age>3
 GROUP BY kind, gender
-HAVING count > 20;
+HAVING count > 20 ORDER BY age_VG ASC
+LIMIT 2;

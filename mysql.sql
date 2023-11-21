@@ -350,3 +350,6 @@ DELETE t1 from order_info t1
 join order_info t2
 on t1.customer_id_number = t2.customer_id_number
 where t1.customer_id_number = t2.customer_id_number;
+
+select kind, gender, avg(age) age_VG , count(kind) count
+from pets;

@@ -357,3 +357,14 @@ where age>3
 GROUP BY kind, gender
 HAVING count > 20 ORDER BY age_VG ASC
 LIMIT 2;
+
+
+
+
+/*
+update 
+alter clause
+join 
+subquery
+*/
+

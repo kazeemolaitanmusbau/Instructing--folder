@@ -368,3 +368,83 @@ join
 subquery
 */
 
+CREATE DATABASE `new topic`;
+
+USE `new topic`;
+
+CREATE TABLE customer(
+id INT AUTO_INCREMENT,
+`name` VARCHAR(20),
+`email` TEXT CHECK (`email` LIKE "%.com"),
+PRIMARY KEY(id)
+ );
+ 
+ 
+ 
+ SELECT * FROM customer;
+ 
+ INSERT INTO customer(`name`, email)
+ VALUES("kola", "kola@gmail.com"),
+		("ade", "ade@gmail.com"),
+        ("kemi", "kemi@gmail.com"),
+        ("yemi", "yemi@gmail.com"),
+        ("jame", "jame@gmail.com"),
+        ("smith", "smith@gmail.com"),
+        ("richeal", "richeal@gmail.com"),
+        ("olaitan", "olaitan@gmail.com"),
+        ("tolu", "tolu@gmail.com"),
+        ("alao", "alao@gmail.com"),
+        ("yusuf", "yusuf@gmail.com"),
+        ("lukman", "lukman@gmail.com");
+        
+SELECT * FROM customer;
+         
+-- update
+
+UPDATE customer
+SET `name` = "sancho", email = "sancho@gmail.com"
+WHERE id= 2;
+
+
+SELECT * FROM customer;
+
+UPDATE customer
+SET  email = REPLACE(email, "gmail", "yahoo")
+WHERE id= 4;
+
+
+select replace("olAitan", "A", "a");
+
+
+/*
+add new column
+drop old column
+modify or change existing column
+rename table
+
+*/
+
+
+SELECT * FROM customer;
+
+ALTER TABLE customer
+ADD gender ENUM("female", "male") AFTER `name`;
+
+
+UPDATE customer
+SET gender =   CASE
+					WHEN id= 1 THEN "male"
+                    WHEN id= 2 THEN "male"
+                    WHEN id= 3 THEN "male"
+                    WHEN id= 4 THEN "female"
+                    WHEN id= 5 THEN "male"
+                    WHEN id= 6 THEN "male"
+                    WHEN id= 7 THEN "female"
+                    WHEN id= 8 THEN "male"
+                    WHEN id= 9 THEN "female"
+                    WHEN id= 10 THEN "male"
+                    WHEN id= 11 THEN "male"
+                    WHEN id= 12 THEN "male"
+                    END ;
+                    
+SELECT * FROM customer;

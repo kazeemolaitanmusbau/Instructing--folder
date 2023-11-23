@@ -448,3 +448,67 @@ SET gender =   CASE
                     END ;
                     
 SELECT * FROM customer;
+
+
+ALTER TABLE customer
+ADD  W INT,
+ADD I INT ;
+
+DESCRIBE customer;
+
+
+ALTER TABLE customer
+MODIFY W  VARCHAR(12) DEFAULT "olaitan";
+
+
+ALTER TABLE customer
+CHANGE I lasop  VARCHAR(12) unique;
+
+ALTER TABLE  customer
+DROP W,
+DROP lasop;
+
+
+SELECT * FROM customer;
+
+
+ALTER TABLE customer
+RENAME TO `customer info`;
+
+SELECT * FROM `customer info`;
+
+
+ALTER TABLE `customer info`
+change `order data`   `Order Date` TEXT;
+
+
+
+
+UPDATE `customer info`
+SET `Order Date` =   CASE
+					WHEN id= 1 THEN "01-11-2023"
+                    WHEN id= 2 THEN "03-11-2023"
+                    WHEN id= 3 THEN "15-07-2023"
+                    WHEN id= 4 THEN "14-09-2023"
+                    WHEN id= 5 THEN "12-10-2023"
+                    WHEN id= 6 THEN "11-10-2023"
+                    WHEN id= 7 THEN "22-10-2023"
+                    WHEN id= 8 THEN "21-07-2023"
+                    WHEN id= 9 THEN "04-11-2023"
+                    WHEN id= 10 THEN "19-05-2023"
+                    WHEN id= 11 THEN "20-01-2023"
+                    WHEN id= 12 THEN "21-02-2023"
+                    END ;
+                    
+                    
+CREATE TABLE `Order info`(
+cust_id int,
+quantity int,
+priceEach int,
+CONSTRAINT olaitan FOREIGN KEY(cust_id) REFERENCES `customer info`(id)
+);
+
+INSERT INTO `Order info`()
+VALUES (1, 10, 500),  (10, 5, 300), (11, 2, 1500), (7, 2, 1000), (12, 12, 800), (2, 7, 600), (1, 10, 500), (10, 17, 632),
+		(7, 28, 200), (1, 12, 500), (1, 10, 500), (1, 10, 500), (12, 5, 1200), (1, 10, 500), (2, 10, 500), (2, 7, 512),
+        (7, 22, 700), (7, 8, 500), (1, 10, 500), (1, 10, 500), (1, 10, 500), (1, 10, 500), (1, 10, 500), (2, 10, 500),

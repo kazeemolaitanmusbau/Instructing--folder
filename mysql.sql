@@ -516,3 +516,33 @@ VALUES (1, 10, 500),  (10, 5, 300), (11, 2, 1500), (7, 2, 1000), (12, 12, 800), 
         
 SELECT * FROM `Order info`;
 
+SELECT * FROM `customer info`;
+
+
+-- INNER JOIN 
+
+SELECT cust_id, `name`, (quantity * priceEach) as `Total price`
+FROM `Order info` 
+INNER JOIN   `customer info`
+ON id = cust_id;
+
+-- right join
+
+SELECT cust_id, `name`, (quantity * priceEach) as `Total price`
+FROM `Order info` 
+LEFT JOIN   `customer info`
+ON id = cust_id ;
+
+
+-- SELECT THE NAME AND EMAIL ADDRESS OF CUSTOMERS YET TO PLACED ORDER;
+SELECT `name`, email
+FROM  `customer info`
+LEFT JOIN `Order info` 
+ON id = cust_id
+WHERE priceEach IS NULL;
+
+
+SELECT `name`, email
+FROM `Order info` 
+Right JOIN  `customer info`
+ON id = cust_id
